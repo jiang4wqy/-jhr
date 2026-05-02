@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Colors — Primary peach</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  body { padding: 24px; }
+  .card { display: flex; flex-direction: column; gap: 14px; }
+  .scale { display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; }
+  .step { display: flex; flex-direction: column; gap: 6px; }
+  .chip { height: 64px; border-radius: var(--tc-r-sm); border: 1px solid var(--tc-border-1); }
+  .step .n { font-family: var(--tc-font-mono); font-size: 10px; color: var(--tc-fg-2); font-weight: 600; }
+  .step .v { font-family: var(--tc-font-mono); font-size: 9px; color: var(--tc-fg-3); }
+  .note { font-family: var(--tc-font-sans); font-size: 12px; color: var(--tc-fg-3); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="scale">
+      <div class="step"><div class="chip" style="background:#FFF7F2"></div><span class="n">50</span><span class="v">#FFF7F2</span></div>
+      <div class="step"><div class="chip" style="background:#FFEADD"></div><span class="n">100</span><span class="v">#FFEADD</span></div>
+      <div class="step"><div class="chip" style="background:#FFD3BC"></div><span class="n">200</span><span class="v">#FFD3BC</span></div>
+      <div class="step"><div class="chip" style="background:#FFB594"></div><span class="n">300</span><span class="v">#FFB594</span></div>
+      <div class="step"><div class="chip" style="background:#FF936A"></div><span class="n">400</span><span class="v">#FF936A</span></div>
+      <div class="step"><div class="chip" style="background:#F4754A; box-shadow: var(--tc-shadow-glow)"></div><span class="n" style="color:var(--tc-peach-600)">500★</span><span class="v">#F4754A</span></div>
+      <div class="step"><div class="chip" style="background:#D85A33"></div><span class="n">600</span><span class="v">#D85A33</span></div>
+      <div class="step"><div class="chip" style="background:#A8431F"></div><span class="n">700</span><span class="v">#A8431F</span></div>
+    </div>
+    <div class="note"><strong style="color:var(--tc-fg-1)">Peach</strong> · brand primary. 500 = default · 400 = hover · 600 = press</div>
+  </div>
+</body>
+</html>

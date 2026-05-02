@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Profile card</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  body { padding: 24px; }
+  .pcard {
+    width: 320px;
+    background: #fff;
+    border: 1px solid var(--tc-border-1);
+    border-radius: 28px;
+    overflow: hidden;
+    font-family: var(--tc-font-sans);
+  }
+  .pcard .photo { width: 100%; aspect-ratio: 4/5; background: var(--tc-cream-100); object-fit: cover; display: block; }
+  .pcard .body { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .pcard .name { font-size: 20px; font-weight: 700; color: var(--tc-ink-900); display: flex; align-items: baseline; gap: 8px; }
+  .pcard .name .age { font-size: 16px; font-weight: 400; color: var(--tc-ink-500); }
+  .pcard .school { font-size: 13px; color: var(--tc-ink-500); display: flex; align-items: center; gap: 6px; }
+  .pcard .school::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--tc-peach-500); }
+  .pcard .quote { font-family: var(--tc-font-serif); font-style: italic; font-size: 14px; line-height: 1.55; color: var(--tc-ink-700); padding-top: 4px; border-top: 1px solid var(--tc-border-1); }
+  .pcard .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pcard .tag { font-size: 11px; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--tc-cream-300); color: var(--tc-fg-2); }
+  .frame { display: flex; gap: 20px; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="pcard">
+      <img class="photo" src="../assets/placeholders/portrait-01.png" alt="">
+      <div class="body">
+        <div class="name">林安 <span class="age">· 21</span></div>
+        <div class="school">北京大学 · 中文系</div>
+        <div class="tags"><span class="tag">阅读</span><span class="tag">徒步</span><span class="tag">钢琴</span></div>
+        <div class="quote">"喜欢在图书馆三楼靠窗的位置看书。"</div>
+      </div>
+    </div>
+    <div class="pcard">
+      <img class="photo" src="../assets/placeholders/portrait-04.png" alt="">
+      <div class="body">
+        <div class="name">陈思远 <span class="age">· 23</span></div>
+        <div class="school">清华大学 · 建筑学</div>
+        <div class="tags"><span class="tag">摄影</span><span class="tag">咖啡</span><span class="tag">骑行</span></div>
+        <div class="quote">"周末喜欢在城市里漫无目的地走。"</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

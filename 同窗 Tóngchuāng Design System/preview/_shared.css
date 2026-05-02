@@ -1,0 +1,63 @@
+/* Shared styles for design system preview cards */
+@import url('../colors_and_type.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: var(--tc-font-sans);
+  background: var(--tc-bg-1);
+  color: var(--tc-fg-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  width: 700px;
+  padding: 28px 32px;
+  background: var(--tc-bg-2);
+  border: 1px solid var(--tc-border-2);
+  border-radius: var(--tc-r-lg);
+}
+
+.row { display: flex; align-items: center; gap: 16px; }
+.col { display: flex; flex-direction: column; gap: 16px; }
+.wrap { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.eyebrow {
+  font-family: var(--tc-font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tc-fg-3);
+}
+
+.label {
+  font-family: var(--tc-font-mono);
+  font-size: 11px;
+  color: var(--tc-fg-3);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+.swatch-chip {
+  width: 100%;
+  height: 64px;
+  border-radius: var(--tc-r-sm);
+  border: 1px solid var(--tc-border-1);
+}
+.swatch-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--tc-fg-1);
+}
+.swatch-value {
+  font-family: var(--tc-font-mono);
+  font-size: 10.5px;
+  color: var(--tc-fg-3);
+}
