@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Spacing scale</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  body { padding: 24px; }
+  .card { display: flex; flex-direction: column; gap: 10px; }
+  .row-s { display: grid; grid-template-columns: 60px 1fr 70px; gap: 12px; align-items: center; }
+  .row-s .tag { font-family: var(--tc-font-mono); font-size: 11px; color: var(--tc-fg-2); font-weight: 600; }
+  .row-s .bar { height: 14px; background: var(--tc-peach-300); border-radius: 3px; }
+  .row-s .px { font-family: var(--tc-font-mono); font-size: 10.5px; color: var(--tc-fg-3); text-align: right; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="row-s"><span class="tag">s-1</span><div class="bar" style="width:4px"></div><span class="px">4px</span></div>
+    <div class="row-s"><span class="tag">s-2</span><div class="bar" style="width:8px"></div><span class="px">8px</span></div>
+    <div class="row-s"><span class="tag">s-3</span><div class="bar" style="width:12px"></div><span class="px">12px</span></div>
+    <div class="row-s"><span class="tag">s-4</span><div class="bar" style="width:16px"></div><span class="px">16px</span></div>
+    <div class="row-s"><span class="tag">s-5</span><div class="bar" style="width:24px"></div><span class="px">24px</span></div>
+    <div class="row-s"><span class="tag">s-6</span><div class="bar" style="width:32px"></div><span class="px">32px</span></div>
+    <div class="row-s"><span class="tag">s-7</span><div class="bar" style="width:48px"></div><span class="px">48px</span></div>
+    <div class="row-s"><span class="tag">s-8</span><div class="bar" style="width:64px"></div><span class="px">64px</span></div>
+    <div class="row-s"><span class="tag">s-9</span><div class="bar" style="width:96px"></div><span class="px">96px</span></div>
+  </div>
+</body>
+</html>

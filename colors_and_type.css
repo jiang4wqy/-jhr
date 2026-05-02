@@ -1,0 +1,239 @@
+/* =========================================================
+   同窗 Tóngchuāng — Design Tokens
+   Marriage / matchmaking platform for university students
+   ========================================================= */
+
+/* -- Webfonts (CN sans + Latin sans + serif accent) ------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=Noto+Serif+SC:wght@400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ------- Brand color: warm peach/rose palette ---------- */
+  /* Primary brand color — a warm, blushing peach-coral.    */
+  --tc-peach-50:  #FFF7F2;
+  --tc-peach-100: #FFEADD;
+  --tc-peach-200: #FFD3BC;
+  --tc-peach-300: #FFB594;
+  --tc-peach-400: #FF936A;   /* hover */
+  --tc-peach-500: #F4754A;   /* PRIMARY */
+  --tc-peach-600: #D85A33;   /* press   */
+  --tc-peach-700: #A8431F;
+  --tc-peach-800: #6F2C12;
+
+  /* Rose accent — used for hearts, "like" actions, hover    */
+  --tc-rose-50:   #FFF1F3;
+  --tc-rose-100:  #FFDCE2;
+  --tc-rose-200:  #FFB4C0;
+  --tc-rose-300:  #FF859A;
+  --tc-rose-400:  #F25E78;
+  --tc-rose-500:  #E03E5F;   /* heart / like */
+  --tc-rose-600:  #B82A48;
+
+  /* Cream / paper — warm neutral background scale --------- */
+  --tc-cream-50:  #FDFAF6;   /* page background */
+  --tc-cream-100: #F8F1E8;   /* card hover, surfaces */
+  --tc-cream-200: #EFE3D2;   /* borders, dividers */
+  --tc-cream-300: #DDC9AE;
+  --tc-cream-400: #B89C7A;
+
+  /* Ink — warm-tinted neutrals (not pure black/grey) ------ */
+  --tc-ink-900:   #2A1D14;   /* primary text */
+  --tc-ink-700:   #4F3A2C;   /* body text */
+  --tc-ink-500:   #806753;   /* secondary text */
+  --tc-ink-300:   #B8A38C;   /* tertiary, placeholder */
+
+  /* Soft accents (used sparingly for tags / categories) --- */
+  --tc-sage:      #8AA68C;   /* nature / outdoors interests */
+  --tc-sky:       #8AB6D6;   /* tech / academic interests   */
+  --tc-plum:      #B086B5;   /* arts / music interests      */
+  --tc-honey:     #E0B870;   /* highlights, achievements    */
+
+  /* Semantic */
+  --tc-success:   #6B9D6E;
+  --tc-warning:   #E0B870;
+  --tc-error:     #C8493A;
+  --tc-info:      #6B8FB5;
+
+  /* ------- Semantic foreground / background -------------- */
+  --tc-fg-1:      var(--tc-ink-900);   /* primary text */
+  --tc-fg-2:      var(--tc-ink-700);   /* body */
+  --tc-fg-3:      var(--tc-ink-500);   /* meta / secondary */
+  --tc-fg-4:      var(--tc-ink-300);   /* placeholder */
+  --tc-fg-on-brand: #FFFFFF;
+  --tc-fg-link:   var(--tc-peach-600);
+
+  --tc-bg-1:      var(--tc-cream-50);  /* page */
+  --tc-bg-2:      #FFFFFF;             /* card surface */
+  --tc-bg-3:      var(--tc-cream-100); /* sunken / hover */
+  --tc-bg-4:      var(--tc-cream-200); /* deeper sunken */
+  --tc-bg-brand:  var(--tc-peach-500);
+  --tc-bg-brand-soft: var(--tc-peach-100);
+
+  --tc-border-1:  rgba(42, 29, 20, 0.08);   /* hairline */
+  --tc-border-2:  var(--tc-cream-200);      /* visible */
+  --tc-border-strong: var(--tc-cream-300);
+
+  /* ------- Type families --------------------------------- */
+  --tc-font-sans:    "Noto Sans SC", "DM Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --tc-font-serif:   "Fraunces", "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  --tc-font-display: "Fraunces", "Noto Serif SC", Georgia, serif;
+  --tc-font-mono:    ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ------- Type scale ------------------------------------ */
+  --tc-text-xs:    12px;
+  --tc-text-sm:    14px;
+  --tc-text-base:  16px;
+  --tc-text-md:    18px;
+  --tc-text-lg:    20px;
+  --tc-text-xl:    24px;
+  --tc-text-2xl:   32px;
+  --tc-text-3xl:   44px;
+  --tc-text-4xl:   60px;
+  --tc-text-5xl:   80px;
+
+  /* Line-height */
+  --tc-lh-tight:   1.1;
+  --tc-lh-snug:    1.25;
+  --tc-lh-normal:  1.5;
+  --tc-lh-relaxed: 1.7;
+
+  /* Letter-spacing */
+  --tc-tracking-tight:  -0.02em;
+  --tc-tracking-normal: 0;
+  --tc-tracking-wide:   0.04em;
+  --tc-tracking-wider:  0.12em;
+
+  /* ------- Spacing (4px base) ---------------------------- */
+  --tc-s-1:   4px;
+  --tc-s-2:   8px;
+  --tc-s-3:   12px;
+  --tc-s-4:   16px;
+  --tc-s-5:   24px;
+  --tc-s-6:   32px;
+  --tc-s-7:   48px;
+  --tc-s-8:   64px;
+  --tc-s-9:   96px;
+  --tc-s-10:  128px;
+
+  /* ------- Radii ----------------------------------------- */
+  --tc-r-xs:  6px;
+  --tc-r-sm:  10px;
+  --tc-r-md:  14px;
+  --tc-r-lg:  20px;
+  --tc-r-xl:  28px;
+  --tc-r-2xl: 40px;
+  --tc-r-full: 999px;
+
+  /* ------- Shadows (warm, soft — never grey) ------------- */
+  --tc-shadow-1: 0 1px 2px rgba(122, 64, 32, 0.06);
+  --tc-shadow-2: 0 4px 12px rgba(122, 64, 32, 0.08), 0 1px 2px rgba(122, 64, 32, 0.04);
+  --tc-shadow-3: 0 12px 32px rgba(122, 64, 32, 0.12), 0 2px 6px rgba(122, 64, 32, 0.06);
+  --tc-shadow-4: 0 24px 60px rgba(122, 64, 32, 0.16), 0 6px 12px rgba(122, 64, 32, 0.08);
+  --tc-shadow-glow: 0 0 0 4px rgba(244, 117, 74, 0.18);
+
+  /* ------- Motion ---------------------------------------- */
+  --tc-ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --tc-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --tc-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);  /* soft bounce */
+  --tc-dur-fast:   140ms;
+  --tc-dur-base:   220ms;
+  --tc-dur-slow:   400ms;
+
+  /* ------- Layout ---------------------------------------- */
+  --tc-content-narrow: 640px;
+  --tc-content-base:   880px;
+  --tc-content-wide:   1200px;
+  --tc-content-max:    1440px;
+}
+
+/* =========================================================
+   Semantic typography helpers
+   Use as classes OR copy declarations into your components
+   ========================================================= */
+
+.tc-display-1 {
+  font-family: var(--tc-font-display);
+  font-weight: 500;
+  font-size: var(--tc-text-5xl);
+  line-height: var(--tc-lh-tight);
+  letter-spacing: var(--tc-tracking-tight);
+  color: var(--tc-fg-1);
+}
+.tc-display-1 em { font-style: italic; font-weight: 400; }
+
+.tc-h1 {
+  font-family: var(--tc-font-sans);
+  font-weight: 700;
+  font-size: var(--tc-text-3xl);
+  line-height: var(--tc-lh-snug);
+  letter-spacing: var(--tc-tracking-tight);
+  color: var(--tc-fg-1);
+}
+
+.tc-h2 {
+  font-family: var(--tc-font-sans);
+  font-weight: 600;
+  font-size: var(--tc-text-2xl);
+  line-height: var(--tc-lh-snug);
+  color: var(--tc-fg-1);
+}
+
+.tc-h3 {
+  font-family: var(--tc-font-sans);
+  font-weight: 600;
+  font-size: var(--tc-text-xl);
+  line-height: var(--tc-lh-snug);
+  color: var(--tc-fg-1);
+}
+
+.tc-h4 {
+  font-family: var(--tc-font-sans);
+  font-weight: 500;
+  font-size: var(--tc-text-md);
+  line-height: var(--tc-lh-snug);
+  color: var(--tc-fg-1);
+}
+
+.tc-body {
+  font-family: var(--tc-font-sans);
+  font-weight: 400;
+  font-size: var(--tc-text-base);
+  line-height: var(--tc-lh-relaxed);
+  color: var(--tc-fg-2);
+}
+
+.tc-body-sm {
+  font-family: var(--tc-font-sans);
+  font-weight: 400;
+  font-size: var(--tc-text-sm);
+  line-height: var(--tc-lh-normal);
+  color: var(--tc-fg-2);
+}
+
+.tc-meta {
+  font-family: var(--tc-font-sans);
+  font-weight: 500;
+  font-size: var(--tc-text-xs);
+  line-height: var(--tc-lh-normal);
+  letter-spacing: var(--tc-tracking-wide);
+  color: var(--tc-fg-3);
+  text-transform: uppercase;
+}
+
+.tc-quote {
+  font-family: var(--tc-font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--tc-text-lg);
+  line-height: var(--tc-lh-relaxed);
+  color: var(--tc-fg-2);
+}
+
+.tc-link {
+  color: var(--tc-fg-link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--tc-peach-200);
+  transition: text-decoration-color var(--tc-dur-base) var(--tc-ease-out);
+}
+.tc-link:hover { text-decoration-color: var(--tc-peach-500); }

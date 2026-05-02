@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Type — Scale</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  body { padding: 24px; }
+  .card { display: flex; flex-direction: column; gap: 14px; }
+  .row-t { display: grid; grid-template-columns: 70px 1fr 110px; gap: 16px; align-items: baseline; padding-bottom: 12px; border-bottom: 1px solid var(--tc-border-1); }
+  .row-t:last-child { border-bottom: none; padding-bottom: 0; }
+  .row-t .tag { font-family: var(--tc-font-mono); font-size: 10.5px; color: var(--tc-fg-3); }
+  .row-t .specimen { color: var(--tc-fg-1); font-family: var(--tc-font-sans); }
+  .row-t .meta { font-family: var(--tc-font-mono); font-size: 10.5px; color: var(--tc-fg-3); text-align: right; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="row-t"><span class="tag">H1</span><span class="specimen" style="font-size:32px; font-weight:700; letter-spacing:-0.02em;">今天为你介绍三位同学</span><span class="meta">32 · 700</span></div>
+    <div class="row-t"><span class="tag">H2</span><span class="specimen" style="font-size:24px; font-weight:600;">Tell us about yourself</span><span class="meta">24 · 600</span></div>
+    <div class="row-t"><span class="tag">H3</span><span class="specimen" style="font-size:20px; font-weight:600;">关于我</span><span class="meta">20 · 600</span></div>
+    <div class="row-t"><span class="tag">Body</span><span class="specimen" style="font-size:16px; line-height:1.7; color:var(--tc-fg-2);">我是一个喜欢在图书馆三楼靠窗位置看书的人。</span><span class="meta">16 · 400</span></div>
+    <div class="row-t"><span class="tag">Small</span><span class="specimen" style="font-size:14px; color:var(--tc-fg-2);">最近在读《人间词话》</span><span class="meta">14 · 400</span></div>
+    <div class="row-t"><span class="tag">Meta</span><span class="specimen" style="font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--tc-fg-3);">PEKING UNIVERSITY · CLASS OF 2026</span><span class="meta">11 · 600</span></div>
+  </div>
+</body>
+</html>

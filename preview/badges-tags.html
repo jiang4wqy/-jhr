@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Tags & badges</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  body { padding: 24px; }
+  .card { display: flex; flex-direction: column; gap: 14px; }
+  .row-t { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .tag {
+    font-family: var(--tc-font-sans);
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tag.sage { background: rgba(138,166,140,0.12); color: #5a7a5d; border-color: rgba(138,166,140,0.4); }
+  .tag.sky { background: rgba(138,182,214,0.12); color: #5985a8; border-color: rgba(138,182,214,0.4); }
+  .tag.plum { background: rgba(176,134,181,0.12); color: #7c5a82; border-color: rgba(176,134,181,0.4); }
+  .tag.honey { background: rgba(224,184,112,0.14); color: #8a6a2f; border-color: rgba(224,184,112,0.4); }
+  .tag.peach { background: var(--tc-peach-100); color: var(--tc-peach-700); border-color: var(--tc-peach-200); }
+  .tag.outlined { background: transparent; color: var(--tc-fg-2); border-color: var(--tc-cream-300); }
+  .badge { font-family: var(--tc-font-sans); font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.04em; }
+  .b-verified { background: var(--tc-peach-100); color: var(--tc-peach-700); }
+  .b-new { background: var(--tc-cream-200); color: var(--tc-ink-700); }
+  .label { font-family: var(--tc-font-mono); font-size: 10.5px; color: var(--tc-fg-3); width: 80px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="row-t">
+      <span class="label">Hobbies</span>
+      <span class="tag sage">徒步</span>
+      <span class="tag sky">阅读</span>
+      <span class="tag plum">钢琴</span>
+      <span class="tag honey">摄影</span>
+      <span class="tag outlined">咖啡</span>
+    </div>
+    <div class="row-t">
+      <span class="label">Status</span>
+      <span class="tag peach">在线</span>
+      <span class="badge b-verified">学籍已认证</span>
+      <span class="badge b-new">NEW</span>
+    </div>
+  </div>
+</body>
+</html>
